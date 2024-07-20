@@ -61,11 +61,11 @@ namespace Microsoft.Maui.Handlers
 			{
 				PlatformView.RemoveView(view);
 			}
-			else 
+			else
 			{
 				var targetIndex = VirtualView.GetLayoutHandlerIndex(child);
 
-				if(targetIndex < PlatformView.ChildCount)
+				if (targetIndex < PlatformView.ChildCount)
 				{
 					PlatformView.RemoveViewAt(targetIndex);
 				}
